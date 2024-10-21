@@ -25,6 +25,11 @@ builder.Services.RegisterBusinessLogic();
 builder.Services.AddControllers();
 builder.Services.AddSingleton<IUnhandledExceptionHandler, UnhandledExceptionHandler>();
 
+builder.WebHost.ConfigureKestrel(serverOptions => 
+{
+    serverOptions.ListenAnyIP(35600);
+});
+
 var app = builder.Build();
 
 app.UseHttpsRedirection();
