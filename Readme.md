@@ -146,8 +146,6 @@ The following are the list of configurable items for the application -
 
 ## Contributing
 
-If you'd like others to contribute to your project, add guidelines here.
-
 ```
 Contributions are welcome! Please follow these steps:
 1. Fork the repository.
